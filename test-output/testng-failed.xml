@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <test thread-count="5" name="firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testcases.EditLead">
+        <methods>
+          <include name="editlead"/>
+          <include name="startup"/>
+          <include name="setData"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.EditLead -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
